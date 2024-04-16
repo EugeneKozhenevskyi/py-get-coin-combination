@@ -17,7 +17,7 @@ import pytest
                      id="Check if coin is 50")
     ]
 )
-def test_result(coins: int, result: list[int]):
+def test_result(coins: int, result: list[int]) -> None:
     assert (
         get_coin_combination(coins) == result
     )
